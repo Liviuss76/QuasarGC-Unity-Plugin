@@ -31,13 +31,19 @@ Drag the “QGCInit” prefab, supplied with plugin, into the scene and in inspe
 ## API
 
 #### Login
-
+Method:  
 ```csharp
-    using UnityEngine;
-    using QGC;
-    ...
+public static void Login (string username, string password)
+```
+Example:  
+```csharp
+	using UnityEngine;
+	using QGC;
+	...
     
 	QGC.API.Login (username, password);
+
+	...
 
 	void OnEnable ()
 	{
